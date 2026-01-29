@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import type { Joke } from '../types/Joke';
 
+// Custom hook  manage saved jokes
 const useJokes = () => {
   const [savedJokes, setSavedJokes] = useState<Joke[]>([]);
 
   const saveJoke = (joke: Joke) => {
-    // Check if joke already exists
     const exists = savedJokes.some(savedJoke => savedJoke.id === joke.id);
     if (!exists) {
       setSavedJokes(prev => [...prev, joke]);
