@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import Header from './components/Header';
-import FrontPage from './pages/FrontPage';
-import SavedPage from './pages/SavedPage';
+import FrontPage from './components/FrontPage';
+import SavedPage from './components/SavedPage';
 import type { Joke } from './types/Joke';
 
 function App() {
