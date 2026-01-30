@@ -7,7 +7,7 @@ interface FrontPageProps {
   saveJoke?: (joke: Joke) => void;
 }
 
-const FrontPage = ({ savedJokes, saveJoke }: FrontPageProps) => {
+const FrontPage = ({ saveJoke }: FrontPageProps) => {
   const [joke, setJoke] = useState<Joke | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
