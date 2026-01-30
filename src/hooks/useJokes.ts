@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import type { Joke } from '../types/Joke';
 
-// Custom hook  manage saved jokes
-const useJokes = () => {
+export const useJokes = () => {
   const [savedJokes, setSavedJokes] = useState<Joke[]>([]);
 
   const saveJoke = (joke: Joke) => {
@@ -22,5 +21,3 @@ const useJokes = () => {
     deleteJoke
   };
 };
-
-export default useJokes;
